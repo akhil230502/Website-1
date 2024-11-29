@@ -1,0 +1,104 @@
+.firstpage nav {
+    background-color: white;
+    border: 5px solid white;
+    width: 1450px;
+    height: 120px;
+    padding-left: 500px;
+    padding-top: 30px;
+    border-radius: 50px;
+    margin-left: 50px;
+    display: flex;
+  }
+  .firstpage img {
+    left: 0px;
+    margin-left: -400px;
+  }
+  .firstpage span {
+    padding-left: 500px;
+    text-align: right;
+    width: 2px;
+    height: 2px;
+    border: 2px;
+    margin-bottom: 20px;
+  }
+  .firstpage a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+  .main{
+    background-color: rgb(172, 201, 212);
+    height: 500px;
+    width: 1500px;
+    padding-left: 700px;
+    padding-top: 200px;
+    margin-bottom: 40px;
+  }
+  .main p a{
+    text-decoration: none;
+    color: blueviolet;
+  }
+  .container{
+    background-color: blueviolet;
+    width: 1320px;
+    height: 800px;
+    margin-left: 200px;
+    padding-left: 150px;
+    padding-top: 50px;
+  }
+  .container .image{
+    margin-left: 1000px;
+  }
+  .form{
+    color: white;
+    padding-left: 100px;
+  }
+  .form iframe{
+    margin-top: -300px;
+  }
+   
+
+  
+/* footer */
+  .title-6 {
+    background-color: rgb(53, 47, 47);
+    height: 300px;
+    width: 1500px;
+    margin-top: -15px;
+    text-decoration: none;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .title-6 a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    padding-left: 500px;
+    padding-bottom: -700px;
+    margin-top: -10px;
+    padding: 5px;
+  }
+  .products {
+    padding-left: 400px;
+    margin-top: -30px;
+  }
+  .company {
+    padding-left: 700px;
+    margin-top: -100px;
+  }
+  .footer {
+    background-color: rgb(53, 47, 47);
+    height: 70px;
+    width: 1500px;
+    color: #ffffff;
+    border: 1px solid rgb(41, 40, 40);
+    padding-left: 150px;
+    padding-top: 15px;
+  }
+  .footer a {
+    color: #ffffff;
+  }
+ .row{
+  margin-top: -400px;
+ }

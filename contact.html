@@ -39,15 +39,105 @@
     </div>
     <div class="main">
       <h2>Contact Us</h2>
-      <p><a href="index.html">Home --></a>Contact us</p>
-    </div>
-       <div class="container">
+      <p><a href="index.html">Home &rarr;</a>Contact us</p>
+     </div>
+
+
+     <div class="container">
+      <div class="info">
+        <p>CONTACT US</p>
+        <h2>Get In The Touch</h2>
+      </div>
+      <div class="img">
+        <img src="shape_man_1.png">
+      </div>
+      <div class="row mb-5">
+      <div class="col-6">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.8803795488852!2d77.70304807481376!3d11.343446988841887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d9ce972322b%3A0x8b25d28e692cbcd5!2sMagiva%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1732855778744!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      </div>
+        <div class="col-6">
+          <form action="" method="post" onsubmit=" return validate()">
+            <div class="row">
+              <div class="col col-md-6 mb-5"><input type="text " id="Firstname" placeholder="Firstname"></div>
+              <div class="col col-md-6 mb-3"><input type="text " id="Lastname" placeholder="Lastname"></div>
+              <div class="col col-md-6 mb-5"><input type="email" id="email" placeholder="Email Address"></div>
+              <div class="col col-md-6 mb-3"><input type="number"  id="contact" placeholder="Contact No"></div>
+              <div class="col col-md-12 mb-5" ><textarea cols="20" rows="4" id="message" placeholder="Write your Messsage"></textarea></div>
+              <div class=" col col-md-12 mb-5"><input type="checkbox" id="robot"><span style="background-color: white;">I'm not a robot</span></div>
+              <div class=" col col-md-12 mb-5"><button style="border-radius: 50px;" type="submit" value="Send"> Send</button></div>
+            </div>
+          </form>
+     </div>    
+    <script>
+      function validate() {
+        const firstName = document.getElementById("Firstname").value;
+
+        const lastName = document.getElementById("Lastname").value;
+
+        const email = document.getElementById("email").value;
+
+        const contact = document.getElementById("contact").value;
+
+        const message = document.getElementById("message").value;
+
+        const verify = document.getElementById("robot").checked;
+    
+        
+        if (firstName == "" ) {
+          alert(" enter your first name");
+          return false;
+        }
+    
+      
+        if (lastName == "" ) {
+          alert(" enter your last name");
+          return false;
+        }
+    
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert("enter valid email ");
+          return false;
+        }
+    
+
+        if (contact == "" || contact.length != 10) {
+          alert(" enter a valid 10-digit mobile number");
+          return false;
+        }
+    
+        if (message == "") {
+          alert(" enter your message");
+          return false;
+        }
+    
+        if (!verify) {
+          alert(" verify you are not robot");
+          return false;
+        }
+    
+        alert(" Thanks for your response");
+        return true; 
+      }
+    </script>
+    
+      
+      <!--<div class="container">
     <div class="form">
       <p>CONTACT US</p>
       <h2>Get In The Touch</h2>
       <div class="image">
         <img src="shape_man_1.png" alt="" />
       </div>
+      <div class="row"
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.8803795488852!2d77.70304807481376!3d11.343446988841887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d9ce972322b%3A0x8b25d28e692cbcd5!2sMagiva%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1732855778744!5m2!1sen!2sin"
         width="600"
@@ -59,20 +149,20 @@
       ></iframe>
    
         <div class="row">
-          <div class="col"><input type="text" placeholder="Firstname" /></div>
-          <div class="col"><input type="text" placeholder="Lastname" /></div>
+          <div class="col-md-6"><input type="text" placeholder="Firstname" /></div>
+          <div class="col-md-6"><input type="text" placeholder="Lastname" /></div>
           <br />
           <div class="row">
-            <div class="col">
+            <div class="col-md-6">
               <input type="email" placeholder="Email Address" />
             </div>
-            <div class="col">
+            <div class="col-md-6">
               <input type="number" placeholder="Contact No" />
             </div>
             <br />
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-md-6">
               <textarea
                 rows="5"
                 cols="5"
@@ -81,7 +171,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
     <div class="title-6">
